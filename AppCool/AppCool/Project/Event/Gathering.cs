@@ -29,7 +29,16 @@ namespace AppCool.Project.Event
         public void Start()
         {
             _status = Status.Started;
+
             OnStarted.Invoke(Information);
+        }
+
+        public void Finished()
+        {
+            _status = Status.Finished;
+
+            foreach (var user in _participants.User)
+                OnStarted -= user.Notification.GetMessage;
         }
 
         public void Follow(User user)

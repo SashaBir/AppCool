@@ -15,6 +15,8 @@ namespace AppCool.Project.Users
             _users = new SortedDictionary<uint, User>();
         }
 
+        public IEnumerable<User> User => (IEnumerable<User>)_users;
+
         public void Add(User user)
         {
             if (_users.ContainsKey(user.Id) == true)
