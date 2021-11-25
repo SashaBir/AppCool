@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppCool.Project.Time;
 using AppCool.Project.Users;
 
 namespace AppCool.Project.Event
@@ -14,6 +15,7 @@ namespace AppCool.Project.Event
 
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
+        private readonly Timer _timer; // ВАЖНО: ЕСТЬ ЛЫ СВОЙ ТАЙМЕР С НУЖНЫМИ ВОЗМОЖНОСТЯМИ
 
         private Status _status;
 
@@ -22,7 +24,10 @@ namespace AppCool.Project.Event
         public Gathering(Teacher creator, Information information)
         {
             (_creator, Information) = (creator, information);
+
             _participants = new UserCollecter();
+            _timer = new Timer(60);
+
             _status = Status.WaitingForUsers;
         }
 
