@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace AppCool.Project.Users
 {
-    public class User
+    public class Teacher : User
     {
-        public readonly FIO FullName;
-
-        public User(FIO fio)
+        public Teacher(FIO fio) : base(fio)
         {
-            FullName = fio;
-        }
 
-        public uint Id { private set; get; }
+        }
     }
 }
