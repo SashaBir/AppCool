@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppCool.Project.Event;
+using AppCool.Project.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,14 @@ namespace AppCool
         public MainWindow()
         {
             InitializeComponent();
+
+            Teacher teacher = new Teacher(451, new FIO("A", "B", "C"));
+            Information information = new Information(84, "world", "dwa", teacher.FullName.ToString());
+            Gathering gathering = new Gathering(teacher, information);
+
+            Student student = new Student(450, new FIO("A", "B", "C"));
+            gathering.Follow(student);
+            gathering.Start();
         }
     }
 }

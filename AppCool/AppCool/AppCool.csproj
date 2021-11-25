@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Project\Event\Status.cs" />
+    <Compile Include="Project\Event\Gathering.cs" />
+    <Compile Include="Project\Event\Information.cs" />
+    <Compile Include="Project\Notifications\Notification.cs" />
+    <Compile Include="Project\Users\FIO.cs" />
+    <Compile Include="Project\Users\Student.cs" />
+    <Compile Include="Project\Users\Teacher.cs" />
+    <Compile Include="Project\Users\User.cs" />
+    <Compile Include="Project\Users\UserCollecter.cs" />
     <Compile Include="TeacherPage.xaml.cs">
       <DependentUpon>TeacherPage.xaml</DependentUpon>
     </Compile>
@@ -101,5 +110,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

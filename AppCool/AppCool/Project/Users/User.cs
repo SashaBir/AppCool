@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppCool.Project.Notifications;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +11,13 @@ namespace AppCool.Project.Users
     {
         public readonly uint Id;
         public readonly FIO FullName;
+        public readonly Notification Notification;
 
         public User(uint id, FIO fio)
         {
             (Id, FullName) = (id, fio);
+
+            Notification = new Notification();
         }
     }
 }

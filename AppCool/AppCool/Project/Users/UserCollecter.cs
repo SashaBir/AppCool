@@ -10,6 +10,11 @@ namespace AppCool.Project.Users
     {
         private readonly SortedDictionary<uint, User> _users;
 
+        public UserCollecter()
+        {
+            _users = new SortedDictionary<uint, User>();
+        }
+
         public void Add(User user)
         {
             if (_users.ContainsKey(user.Id) == true)
