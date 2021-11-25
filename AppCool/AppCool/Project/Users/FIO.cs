@@ -8,12 +8,12 @@ namespace AppCool.Project.Users
 {
     public class FIO
     {
-        private FIO(string name, string subName, string middleName)
+        public FIO(string name, string subName, string middleName)
         {
             (Name, SubName, MiddleName) = (name, subName, middleName);
         }
 
-        public string Name { private set; get; }
+        public string Name { private set; get; } // имя
         public string SubName { private set; get; } // фамилия
         public string MiddleName { private set; get; } // отчество
 

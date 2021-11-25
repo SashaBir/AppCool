@@ -8,13 +8,12 @@ namespace AppCool.Project.Users
 {
     public class User
     {
+        public readonly uint Id;
         public readonly FIO FullName;
 
-        public User(FIO fio)
+        public User(uint id, FIO fio)
         {
-            FullName = fio;
+            (Id, FullName) = (id, fio);
         }
-
-        public uint Id { private set; get; }
     }
 }

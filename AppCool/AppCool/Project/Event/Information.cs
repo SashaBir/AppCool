@@ -8,13 +8,16 @@ namespace AppCool.Project.Event
 {
     public class Information
     {
-        private Information(string title, string description)
+        public readonly uint Id;
+
+        public Information(uint id, string title, string description, string director)
         {
-            (Title, Description) = (title, description);
+            (Id, Title, Description, Director) = (id,title, description, director);
         }
 
         public string Title { private set; get; }
         public string Description { private set; get; } // описание мероприятия
+        public string Director { private set; get; }
 
     }
 }

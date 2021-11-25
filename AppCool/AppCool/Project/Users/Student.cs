@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace AppCool.Project.Users
 {
-    class Student
+    public class Student : User
     {
+        public Student (uint id, FIO fio) : base(id, fio)
+        {
+
+        }
     }
 }

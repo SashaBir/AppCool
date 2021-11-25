@@ -8,7 +8,7 @@ namespace AppCool.Project.Users
 {
     public class Teacher : User
     {
-        public Teacher(FIO fio) : base(fio)
+        public Teacher(uint id, FIO fio) : base(id, fio)
         {
 
         }

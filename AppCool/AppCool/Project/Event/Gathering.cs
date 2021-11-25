@@ -10,13 +10,21 @@ namespace AppCool.Project.Event
     // Gathering - мероприятие 
     public class Gathering
     {
+        public readonly Information InformationAboutIt;
+
         private readonly Teacher _creator;
-        private readonly Information _information;
         private readonly UserCollecter _collecter;
 
-        private Gathering(Teacher creator, Information information)
+        public event Action<Information> OnStarted = delegate { };
+
+        public Gathering(Teacher creator, Information information)
         {
-            (_creator, _information) = (creator, information);
+            (_creator, InformationAboutIt) = (creator, information);
+        }
+
+        public void Start()
+        {
+            OnStarted.Invoke(InformationAboutIt);
         }
 
         public void Follow(User user)
@@ -27,11 +35,6 @@ namespace AppCool.Project.Event
         public void Unfollow(User user)
         {
             _collecter.Add(user);
-        }
-
-        public string GetDirector() 
-        {
-            return _creator.FullName.ToString();
         }
     }
 }

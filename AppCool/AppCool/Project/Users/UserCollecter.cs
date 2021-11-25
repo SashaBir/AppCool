@@ -13,7 +13,7 @@ namespace AppCool.Project.Users
         public void Add(User user)
         {
             if (_users.ContainsKey(user.Id) == true)
-                throw new Exception($"{user.Id} That user has beeen added");
+                throw new Exception($"{user.Id} That user has been added");
 
             _users.Add(user.Id, user);
         }
@@ -21,7 +21,7 @@ namespace AppCool.Project.Users
         public void Remove(User user)
         {
             if (_users.ContainsKey(user.Id) == false)
-                throw new Exception($"{user.Id} That user has beeen not added");
+                throw new Exception($"{user.Id} That user has been not added");
 
             _users.Remove(user.Id);
         }
