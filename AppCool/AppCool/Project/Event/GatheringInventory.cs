@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppCool.Project.Event
 {
     public class GatheringInventory
     {
-        public readonly SortedDictionary<uint, Information> _gathering;
+        private readonly SortedDictionary<uint, Information> _gathering;
 
         public GatheringInventory()
         {

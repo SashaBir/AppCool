@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AppCool.Project.Time;
+﻿using AppCool.Project.Skills;
 using AppCool.Project.Users;
-using AppCool.Project.Skills;
+using System;
+using System.Collections.Generic;
 
 namespace AppCool.Project.Event
 {
@@ -14,13 +10,13 @@ namespace AppCool.Project.Event
     {
         public readonly Information Information;
 
+        public event Action<Information> OnStarted = delegate { };
+
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
         private readonly SkillsKeeper _keeper;
 
         private Status _status;
-
-        public event Action<Information> OnStarted = delegate { };
 
         public Gathering(Teacher creator, Information information, IReadOnlyCollection<Skill> skills)
         {
