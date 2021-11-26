@@ -118,8 +118,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Project\design\Fonts\Montserrat-Regular.ttf" />
-    <None Include="Project\design\Fonts\Montserrat.zip" />
+    <Resource Include="Project\Design\Fonts\Montserrat-Regular.ttf" />
+    <None Include="Project\Design\Fonts\Montserrat.zip" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="Project\design\bicevent1.png" />
+    <Resource Include="Project\Design\bicevent1.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup />

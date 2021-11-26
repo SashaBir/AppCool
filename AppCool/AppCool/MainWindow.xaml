@@ -238,7 +238,7 @@
         <StackPanel Grid.Row="1">
             <!-- ЛОГТОТИП -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image x:Name="logo_be" Width="335" Height="70" Source="bicevent1.png"/>
+                <Image x:Name="logo_be" Width="335" Height="70" Source="Project/Design/bicevent1.png"/>
             </StackPanel>
         </StackPanel>
 
@@ -255,7 +255,7 @@
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"
                                             Foreground="#5A82FC" Height="32" Width="38"/>
-                <TextBox TextWrapping="Wrap" FontSize="35" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" TextChanged="TextBox_TextChanged_1">
+                <TextBox TextWrapping="Wrap" FontSize="35" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight">
 
                 </TextBox>
               
