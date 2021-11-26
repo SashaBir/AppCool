@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-﻿using AppCool.Project.Event;
+using AppCool.Project.Event;
 using AppCool.Project.Skills;
 using AppCool.Project.Users;
-=======
-﻿using AppCool.Project.Registration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
->>>>>>> danil_develop_24112021
 using System.Windows;
 using System.Windows.Controls;
 
@@ -23,7 +14,6 @@ namespace AppCool
         public MainWindow()
         {
             InitializeComponent();
-<<<<<<< HEAD
             
             Teacher teacher = new Teacher(451, new FIO("A", "B", "C"));
             Information information = new Information(84, "world", "dwa", teacher.FullName.ToString());
@@ -56,9 +46,6 @@ namespace AppCool
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
-=======
-            Console.WriteLine(AutentificationValidator.IsValidAutorization("st-112044", "Par-623183"));
->>>>>>> danil_develop_24112021
         }
     }
 }

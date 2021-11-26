@@ -100,7 +100,6 @@
   <ItemGroup>
     <Compile Include="Project\DataBase\Autorization\CallDataBaseAutentification.cs" />
     <Compile Include="Project\DataBase\Autorization\DataBaseAutorization.cs" />
-    <Compile Include="Project\Extended\Extended.cs" />
     <Compile Include="Project\Registration\AutentificationValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -130,8 +129,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
-
   <ItemGroup>
     <Folder Include="Project\design\" />
   </ItemGroup>
@@ -150,11 +147,7 @@
   <ItemGroup>
     <Resource Include="PASS.png" />
   </ItemGroup>
-
   <ItemGroup />
-  
-=======
   <ItemGroup />
->>>>>>> danil_develop_24112021
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
