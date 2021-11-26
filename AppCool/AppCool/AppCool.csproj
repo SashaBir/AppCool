@@ -61,6 +61,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Project\Event\Gathering.cs" />
+    <Compile Include="Project\Event\GatheringInventory.cs" />
+    <Compile Include="Project\Event\Information.cs" />
+    <Compile Include="Project\Event\SkillsKeeper.cs" />
+    <Compile Include="Project\Event\Status.cs" />
+    <Compile Include="Project\Notifications\Notification.cs" />
+    <Compile Include="Project\Skills\Skill.cs" />
+    <Compile Include="Project\Extended\ManipulatorExtended.cs" />
+    <Compile Include="Project\Skills\SkillType.cs" />
+    <Compile Include="Project\Time\Timer.cs" />
+    <Compile Include="Project\Users\FIO.cs" />
+    <Compile Include="Project\Users\SkillsInventory.cs" />
+    <Compile Include="Project\Users\Student.cs" />
+    <Compile Include="Project\Users\Teacher.cs" />
+    <Compile Include="Project\Users\User.cs" />
+    <Compile Include="Project\Users\UserCollecter.cs" />
+    <Compile Include="TeacherPage.xaml.cs">
+      <DependentUpon>TeacherPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,6 +92,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TeacherPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,6 +126,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <Folder Include="Project\design\" />
   </ItemGroup>
@@ -121,5 +145,8 @@
   <ItemGroup>
     <Resource Include="PASS.png" />
   </ItemGroup>
+=======
+  <ItemGroup />
+>>>>>>> events_create
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
