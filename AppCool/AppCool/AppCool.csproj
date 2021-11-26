@@ -69,6 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project\DataBase\Autorization\CallDataBaseAutentification.cs" />
     <Compile Include="Project\DataBase\Autorization\DataBaseAutorization.cs" />
     <Compile Include="Project\Extended\Extended.cs" />
     <Compile Include="Project\Registration\AutentificationValidator.cs" />

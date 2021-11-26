@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppCool.Project.Registration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace AppCool
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine(AutentificationValidator.IsValidAutorization("st-112044", "Par-623183"));
         }
     }
 }
