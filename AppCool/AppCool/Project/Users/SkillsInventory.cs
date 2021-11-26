@@ -29,7 +29,7 @@ namespace AppCool.Project.Users
             }
         }
 
-        public void Show()
+        public void ShowTestNoUsing()
         {
             foreach (var item in Skills)
             {

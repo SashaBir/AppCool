@@ -29,7 +29,7 @@ namespace AppCool
             gathering.Follow(student);
             gathering.Start();
             gathering.Finished();
-            student.SkillInventory.Show();
+            student.SkillInventory.ShowTestNoUsing();
         }
     }
 }

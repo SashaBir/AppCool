@@ -5,7 +5,7 @@
         public Skill(SkillType type, uint counPoint)
         {
             (Type, CountPoints) = (type, counPoint);
-        }
+        }  
 
         public SkillType Type { private set; get; }
         public uint CountPoints { private set; get; }

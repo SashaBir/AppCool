@@ -53,7 +53,7 @@ namespace AppCool.Project.Event
         public void Follow(User user)
         {
             if (_status != Status.WaitingForUsers)
-                throw new Exception($"{user.Id} That user has been follow on gathering");
+                throw new Exception($"{user.Id} That user has been follow on gathering.");
 
             _participants.Add(user);
             OnStarted += user.Notification.GetMessage;
