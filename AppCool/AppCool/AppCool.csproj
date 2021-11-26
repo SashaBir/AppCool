@@ -126,7 +126,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
+
   <ItemGroup>
     <Folder Include="Project\design\" />
   </ItemGroup>
@@ -145,8 +145,8 @@
   <ItemGroup>
     <Resource Include="PASS.png" />
   </ItemGroup>
-=======
+
   <ItemGroup />
->>>>>>> events_create
+  
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
