@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppCool.Project.Time;
 using AppCool.Project.Users;
+using AppCool.Project.Skills;
 
 namespace AppCool.Project.Event
 {
@@ -15,18 +16,18 @@ namespace AppCool.Project.Event
 
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
-        private readonly Timer _timer; // ВАЖНО: ЕСТЬ ЛЫ СВОЙ ТАЙМЕР С НУЖНЫМИ ВОЗМОЖНОСТЯМИ
+        private readonly SkillsKeeper _keeper;
 
         private Status _status;
 
         public event Action<Information> OnStarted = delegate { };
 
-        public Gathering(Teacher creator, Information information)
+        public Gathering(Teacher creator, Information information, IReadOnlyCollection<Skill> skills)
         {
             (_creator, Information) = (creator, information);
 
             _participants = new UserCollecter();
-            _timer = new Timer(60);
+            _keeper = new SkillsKeeper(skills);
 
             _status = Status.WaitingForUsers;
         }
@@ -43,7 +44,10 @@ namespace AppCool.Project.Event
             _status = Status.Finished;
 
             foreach (var user in _participants.User)
+            {
                 OnStarted -= user.Notification.GetMessage;
+                user.Inventory.Add(_keeper.Skills);
+            }
         }
 
         public void Follow(User user)

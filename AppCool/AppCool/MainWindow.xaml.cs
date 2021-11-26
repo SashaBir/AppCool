@@ -25,7 +25,7 @@ namespace AppCool
         public MainWindow()
         {
             InitializeComponent();
-
+            //
             Teacher teacher = new Teacher(451, new FIO("A", "B", "C"));
             Information information = new Information(84, "world", "dwa", teacher.FullName.ToString());
             Gathering gathering = new Gathering(teacher, information);
