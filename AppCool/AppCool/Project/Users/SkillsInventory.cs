@@ -20,9 +20,20 @@ namespace AppCool.Project.Users
             foreach (var skill in skills)
             {
                 if (_skills.ContainsKey(skill.Type) == false)
+                {
                     _skills.Add(skill.Type, skill);
+                    continue;
+                }
 
                 _skills[skill.Type].AddPoints(skill.CountPoints);
+            }
+        }
+
+        public void Show()
+        {
+            foreach (var item in Skills)
+            {
+                System.Console.WriteLine($"{item.Type} {item.CountPoints}");
             }
         }
     }

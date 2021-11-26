@@ -2,9 +2,9 @@
 {
     public class Skill
     {
-        public Skill(SkillType type)
+        public Skill(SkillType type, uint counPoint)
         {
-            Type = type;
+            (Type, CountPoints) = (type, counPoint);
         }
 
         public SkillType Type { private set; get; }

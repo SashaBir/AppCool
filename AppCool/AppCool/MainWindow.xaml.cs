@@ -1,20 +1,7 @@
 ﻿using AppCool.Project.Event;
 using AppCool.Project.Skills;
 using AppCool.Project.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace AppCool
 {
@@ -32,8 +19,8 @@ namespace AppCool
 
             Skill[] skills = new Skill[]
             {
-                new Skill(SkillType.Communication),
-                new Skill(SkillType.BusinessLogic)
+                new Skill(SkillType.Communication, 548),
+                new Skill(SkillType.BusinessLogic, 48)
             };
 
             Gathering gathering = new Gathering(teacher, information, skills);
