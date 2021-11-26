@@ -14,7 +14,7 @@ namespace AppCool.Project.Registration
 
             if (isValildated == false)
             {
-                throw new Exception("Wrong Login");
+                throw new Exception("Login must consists of letters, student's number and "-" between these");
             }
 
             return isValildated;
@@ -24,13 +24,13 @@ namespace AppCool.Project.Registration
         {
             var hasNumber = new Regex(@"[0-9]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
-            var minimumChars = new Regex(@".{6,}");
+            var minimumChars = new Regex(@".{8,}");
             var hasChars = new Regex(@"[a-z]+");
             bool isValildated = hasNumber.IsMatch(password) && hasUpperChar.IsMatch(password) && minimumChars.IsMatch(password) && hasChars.IsMatch(password);
 
             if (isValildated == false)
             {
-                throw new Exception("Wrong Password");
+                throw new Exception("Password must consists of letters, upper letters, numbers and have minimum 8 symbols");
             }
 
             return isValildated;
