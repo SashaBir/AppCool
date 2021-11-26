@@ -98,6 +98,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Project\DataBase\Autorization\CallDataBaseAutentification.cs" />
+    <Compile Include="Project\DataBase\Autorization\DataBaseAutorization.cs" />
+    <Compile Include="Project\Extended\Extended.cs" />
+    <Compile Include="Project\Registration\AutentificationValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -126,6 +130,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
 
   <ItemGroup>
     <Folder Include="Project\design\" />
@@ -148,5 +153,8 @@
 
   <ItemGroup />
   
+=======
+  <ItemGroup />
+>>>>>>> danil_develop_24112021
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
