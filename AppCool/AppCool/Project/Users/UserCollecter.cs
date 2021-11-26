@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppCool.Project.Extended;
+using AppCool.Project.Skills;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +17,7 @@ namespace AppCool.Project.Users
             _users = new SortedDictionary<uint, User>();
         }
 
-        public IEnumerable<User> User => (IEnumerable<User>)_users;
+        public IEnumerable<User> Users => _users.GetIEnumerable();
 
         public void Add(User user)
         {

@@ -43,10 +43,12 @@ namespace AppCool.Project.Event
         {
             _status = Status.Finished;
 
-            foreach (var user in _participants.User)
+            foreach (var user in _participants.Users)
             {
                 OnStarted -= user.Notification.GetMessage;
-                user.Inventory.Add(_keeper.Skills);
+
+                user.SkillInventory.Add(_keeper.Skills);
+                user.GatheringInventory.Add(Information);
             }
         }
 

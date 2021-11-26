@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Project\Event\Status.cs" />
     <Compile Include="Project\Event\Gathering.cs" />
     <Compile Include="Project\Event\Information.cs" />
+    <Compile Include="Project\Event\SkillsKeeper.cs" />
+    <Compile Include="Project\Event\Status.cs" />
     <Compile Include="Project\Notifications\Notification.cs" />
+    <Compile Include="Project\Skills\Skill.cs" />
+    <Compile Include="Project\Extended\ManipulatorExtended.cs" />
+    <Compile Include="Project\Skills\SkillType.cs" />
+    <Compile Include="Project\Time\Timer.cs" />
     <Compile Include="Project\Users\FIO.cs" />
+    <Compile Include="Project\Users\SkillsInventory.cs" />
     <Compile Include="Project\Users\Student.cs" />
     <Compile Include="Project\Users\Teacher.cs" />
     <Compile Include="Project\Users\User.cs" />

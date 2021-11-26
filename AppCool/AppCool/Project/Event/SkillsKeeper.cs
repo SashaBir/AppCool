@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppCool.Project.Extended;
 using AppCool.Project.Skills;
 
 namespace AppCool.Project.Event
@@ -24,6 +25,6 @@ namespace AppCool.Project.Event
             }
         }
 
-        public IEnumerable<Skill> Skills => (IEnumerable<Skill>)_skills;
+        public IEnumerable<Skill> Skills => _skills.GetIEnumerable();
     }
 }

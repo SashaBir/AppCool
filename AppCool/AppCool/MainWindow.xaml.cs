@@ -1,4 +1,5 @@
 ﻿using AppCool.Project.Event;
+using AppCool.Project.Skills;
 using AppCool.Project.Users;
 using System;
 using System.Collections.Generic;
@@ -25,14 +26,23 @@ namespace AppCool
         public MainWindow()
         {
             InitializeComponent();
-            //
+            
             Teacher teacher = new Teacher(451, new FIO("A", "B", "C"));
             Information information = new Information(84, "world", "dwa", teacher.FullName.ToString());
-            Gathering gathering = new Gathering(teacher, information);
+
+            Skill[] skills = new Skill[]
+            {
+                new Skill(SkillType.Communication),
+                new Skill(SkillType.BusinessLogic)
+            };
+
+            Gathering gathering = new Gathering(teacher, information, skills);
 
             Student student = new Student(450, new FIO("A", "B", "C"));
             gathering.Follow(student);
             gathering.Start();
+            gathering.Finished();
+            student.SkillInventory.Show();
         }
     }
 }

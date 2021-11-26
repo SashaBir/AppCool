@@ -1,4 +1,5 @@
-﻿using AppCool.Project.Notifications;
+﻿using AppCool.Project.Event;
+using AppCool.Project.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,16 @@ namespace AppCool.Project.Users
         public readonly uint Id;
         public readonly FIO FullName;
         public readonly Notification Notification;
-        public readonly SkillsInventory Inventory;
+        public readonly SkillsInventory SkillInventory;
+        public readonly GatheringInventory GatheringInventory;
 
         public User(uint id, FIO fio)
         {
             (Id, FullName) = (id, fio);
 
             Notification = new Notification();
-            Inventory = new SkillsInventory();
+            SkillInventory = new SkillsInventory();
+            GatheringInventory = new GatheringInventory();
         }
     }
 }
