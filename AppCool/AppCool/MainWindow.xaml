@@ -281,7 +281,7 @@
 
         <StackPanel Grid.Row="8">       
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}">
+                <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}" Click="Login_Button_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Войти" FontFamily="/AppCool;component/#Montserrat" Foreground="White" FontSize="24" Width="90"/>
                         <iconPacks:PackIconMaterial Kind="ArrowRight" 

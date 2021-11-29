@@ -1,6 +1,7 @@
 ﻿using AppCool.Project.DataBase.Autorization;
 using System;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace AppCool.Project.Registration
 {
@@ -13,6 +14,7 @@ namespace AppCool.Project.Registration
             var hasSpecialSymbol = new Regex(@"[-]+");
             var hasUpperChar = new Regex(@"[A-Z]+");
             var minimumChars = new Regex(@".{8,}");
+
             bool isValidatedLogin = hasNumber.IsMatch(login) && hasChars.IsMatch(login) && hasSpecialSymbol.IsMatch(login);
             bool isValidatedPassword = hasNumber.IsMatch(password) && hasUpperChar.IsMatch(password) && minimumChars.IsMatch(password) && hasChars.IsMatch(password);
 
@@ -21,9 +23,15 @@ namespace AppCool.Project.Registration
                 return CallDataBaseAutentification.CallDataBase(login, password);
             }
             else if (isValidatedLogin == false)
-                throw new Exception("\aLogin must consists of letters, student's number and (-) between these");
+            {
+                MessageBox.Show("\aLogin must consists of letters, student's number and (-) between these");
+                return false;
+            }
             else
-                throw new Exception("\aPassword must consists of letters, upper letters, numbers and have minimum 8 symbols");
+            {
+                MessageBox.Show("\aPassword must consists of letters, upper letters, numbers and have minimum 8 symbols");
+                return false;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ using AppCool.Project.Event;
 using AppCool.Project.Skills;
 using AppCool.Project.Users;
 using System.Windows;
+using AppCool.Project.Registration;
 using System.Windows.Controls;
 
 namespace AppCool
@@ -31,6 +32,11 @@ namespace AppCool
             gathering.Start();
             gathering.Finished();
             student.SkillInventory.ShowTestNoUsing();
+        }
+
+        private void Login_Button_Click(object sender, RoutedEventArgs e)
+        {
+            AutentificationValidator.IsValidAutorization(Login_TextBox.Text, Password_TextBox.Password);
         }
     }
 }
