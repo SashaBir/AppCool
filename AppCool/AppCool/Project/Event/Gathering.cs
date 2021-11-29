@@ -16,8 +16,6 @@ namespace AppCool.Project.Event
         private readonly UserCollecter _participants;
         private readonly SkillsKeeper _keeper;
 
-        private Status _status;
-
         public Gathering(Teacher creator, Information information, IReadOnlyCollection<Skill> skills)
         {
             (_creator, Information) = (creator, information);
@@ -25,19 +23,21 @@ namespace AppCool.Project.Event
             _participants = new UserCollecter();
             _keeper = new SkillsKeeper(skills);
 
-            _status = Status.WaitingForUsers;
+            Status = Status.WaitingForUsers;
         }
+
+        public Status Status { private set; get; }
 
         public void Start()
         {
-            _status = Status.Started;
+            Status = Status.Started;
 
             OnStarted.Invoke(Information);
         }
 
         public void Finished()
         {
-            _status = Status.Finished;
+            Status = Status.Finished;
 
             _creator.GatheringInventory.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
 
@@ -52,7 +52,7 @@ namespace AppCool.Project.Event
 
         public void Follow(User user)
         {
-            if (_status != Status.WaitingForUsers)
+            if (Status != Status.WaitingForUsers)
                 throw new Exception($"{user.Id} That user has been follow on gathering.");
 
             _participants.Add(user);

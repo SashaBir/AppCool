@@ -17,20 +17,23 @@ namespace AppCool
             
             Teacher teacher = new Teacher(451, new FIO("A", "B", "C"));
             Information information = new Information(84, "world", "dwa", teacher.FullName.ToString());
-
             Skill[] skills = new Skill[]
             {
                 new Skill(SkillType.Communication, 548),
                 new Skill(SkillType.BusinessLogic, 48)
             };
 
-            Gathering gathering = new Gathering(teacher, information, skills);
+            GatheringCreator creator = new GatheringCreator();
+            Gathering gathering = creator.Creat(teacher, information, skills);
 
-            Student student = new Student(450, new FIO("A", "B", "C"));
-            gathering.Follow(student);
+            Student student1 = new Student(450, new FIO("A", "B", "C"));
+            Student student2 = new Student(451, new FIO("A1", "B1", "C1"));
+            gathering.Follow(student1);
+            gathering.Follow(student2);
             gathering.Start();
             gathering.Finished();
-            student.SkillInventory.ShowTestNoUsing();
+            student1.SkillInventory.ShowTestNoUsing();
+            student2.SkillInventory.ShowTestNoUsing();
         }
     }
 }

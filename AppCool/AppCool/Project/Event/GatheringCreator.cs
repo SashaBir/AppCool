@@ -9,17 +9,17 @@ namespace AppCool.Project.Event
     {
         public event Action<Gathering> OnCreated = delegate { };
 
-        public readonly GatheringCollecter _collecter;
+        public readonly GatheringCollecter Collecter;
 
         public GatheringCreator()
         {
-            _collecter = new GatheringCollecter();
+            Collecter = new GatheringCollecter();
         }
 
         public Gathering Creat(Teacher teacher, Information information, IReadOnlyCollection<Skill> skills)
         {
             Gathering gathering =  new Gathering(teacher, information, skills);
-            _collecter.Add(gathering);
+            Collecter.Add(gathering);
 
             OnCreated.Invoke(gathering);
 
