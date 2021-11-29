@@ -1,4 +1,5 @@
-﻿using AppCool.Project.Skills;
+﻿using AppCool.Project.Notifications;
+using AppCool.Project.Skills;
 using AppCool.Project.Users;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace AppCool.Project.Event
     {
         public readonly Information Information;
 
-        public event Action<Information> OnStarted = delegate { };
+        public event Action<Message> OnStarted = delegate { };
 
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
@@ -32,7 +33,7 @@ namespace AppCool.Project.Event
         {
             Status = Status.Started;
 
-            OnStarted.Invoke(Information);
+            OnStarted.Invoke(Information.Message);
         }
 
         public void Finished()
