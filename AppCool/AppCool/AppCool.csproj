@@ -68,6 +68,7 @@
     <Compile Include="Project\Event\Information.cs" />
     <Compile Include="Project\Event\SkillsKeeper.cs" />
     <Compile Include="Project\Event\Status.cs" />
+    <Compile Include="Project\Notifications\Message.cs" />
     <Compile Include="Project\Notifications\Notification.cs" />
     <Compile Include="Project\Skills\Skill.cs" />
     <Compile Include="Project\Extended\ManipulatorExtended.cs" />
