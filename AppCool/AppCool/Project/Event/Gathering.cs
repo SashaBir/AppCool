@@ -39,7 +39,7 @@ namespace AppCool.Project.Event
         {
             Status = Status.Finished;
 
-            _creator.GatheringInventory.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
+            _creator.CreaterdGatherings.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
 
             foreach (var user in _participants.Users)
             {
