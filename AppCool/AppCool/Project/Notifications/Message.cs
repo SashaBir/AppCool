@@ -2,17 +2,17 @@
 {
     public struct Message
     {
-        public readonly uint Id;
+        public readonly uint IdProvider;
         public readonly string Context;
 
-        public Message(uint id, string context)
+        public Message(uint idProvider, string context)
         {
-            (Id, Context) = (id, context);
+            (IdProvider, Context) = (idProvider, context);
         }
 
         public override string ToString()
         {
-            return $"{Id} {Context}";
+            return $"{IdProvider} {Context}";
         }
     }
 }

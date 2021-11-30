@@ -42,10 +42,10 @@ namespace AppCool.Project.Event
 
             _creator.CreaterdGatherings.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
 
+            OnStarted = delegate { };
+
             foreach (var user in _participants.Users)
             {
-                OnStarted -= user.Notification.GetMessage;
-
                 user.SkillInventory.Add(_keeper.Skills);
                 user.GatheringInventory.Add(Information);
             }

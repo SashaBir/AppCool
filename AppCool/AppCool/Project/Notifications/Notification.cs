@@ -1,6 +1,4 @@
-﻿using AppCool.Project.Event;
-
-namespace AppCool.Project.Notifications
+﻿namespace AppCool.Project.Notifications
 {
     public class Notification
     {
