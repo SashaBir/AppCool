@@ -61,7 +61,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-<<<<<<< HEAD
     <Compile Include="Project\Event\GatheringCreator.cs" />
     <Compile Include="Project\Event\Gathering.cs" />
     <Compile Include="Project\Event\GatheringCollecter.cs" />
@@ -83,10 +82,6 @@
     <Compile Include="Project\Users\UserCollecter.cs" />
     <Compile Include="TeacherPage.xaml.cs">
       <DependentUpon>TeacherPage.xaml</DependentUpon>
-=======
-    <Compile Include="StudentPage.xaml.cs">
-      <DependentUpon>StudentPage.xaml</DependentUpon>
->>>>>>> origin/DataBase_develop_26112021_143700
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -100,14 +95,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-<<<<<<< HEAD
-    <Page Include="TeacherPage.xaml">
-=======
-    <Page Include="StudentPage.xaml">
->>>>>>> origin/DataBase_develop_26112021_143700
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Page Include="TeacherPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Project\DataBase\Autorization\CallDataBaseAutentification.cs" />
@@ -147,10 +135,8 @@
   <ItemGroup>
     <Resource Include="Project\Design\bicevent1.png" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
   <ItemGroup />
-=======
   <ItemGroup>
     <Resource Include="Project\design\Emblema.png" />
   </ItemGroup>
@@ -160,6 +146,5 @@
   <ItemGroup>
     <Resource Include="Project\design\gerl_vec-01.png" />
   </ItemGroup>
->>>>>>> nika_design_24112021
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
