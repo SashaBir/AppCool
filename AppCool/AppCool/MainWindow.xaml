@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:AppCool" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920"
-
         ResizeMode="NoResize" d:DesignHeight="460"
-        Background="#283557"
+        Background="#ffff" VerticalContentAlignment="Center"
         >
-    <Window.Resources>      <!--Настройка стилей-->
-        
+    <Window.Resources>
+        <!--Настройка стилей-->
+
         <!-- Здесь настройка стиля текстбокса -->
 
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#5A82FC"/>
@@ -68,10 +68,13 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <SolidColorBrush x:Key="Button.Static.Background" Color="#5A82FC"/>
-        <SolidColorBrush x:Key="Button.Static.Border" Color="#5A82FC"/>
+
+        <!--ЦВЕТА КНОПКИ-->
+
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FF3E60C1"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF3E60C1"/>
         <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FFBEE6FD"/>
         <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
         <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
         <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
@@ -212,90 +215,117 @@
                 </MultiTrigger>
             </Style.Triggers>
         </Style>
-        
+
 
     </Window.Resources>
 
-    <Grid Margin="600,190,600,190" Background="#FFFFFF" SnapsToDevicePixels="True">
-        <Grid.Effect>
-            <DropShadowEffect BlurRadius="20" RenderingBias="Quality" Direction="500" ShadowDepth="20"/>
-        </Grid.Effect>
-        <Grid.RowDefinitions>
-            <!-- колонки -->
-            <RowDefinition Height="90"></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
-            <RowDefinition Height="70"></RowDefinition>
-            <RowDefinition Height="65"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="45"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition Height="55"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition Height="115"></RowDefinition>
-        </Grid.RowDefinitions>
+    <Grid>
+        <Grid Margin="100,100,800,100">
+            <Image Source="Project/design/gerl_vec-01.png"/>
+        </Grid>
+        <Grid Margin="1200,190,200,190" Background="#FFFFFF">
+            <Grid.RowDefinitions>
+                <!-- колонки -->
+                <RowDefinition Height="0.333"></RowDefinition>
+                <RowDefinition Height="89.667"/>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="65"></RowDefinition>
+                <RowDefinition Height="55"></RowDefinition>
+                <RowDefinition Height="45"></RowDefinition>
+                <RowDefinition Height="55"></RowDefinition>
+                <RowDefinition Height="55"></RowDefinition>
+                <RowDefinition Height="55"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="115"></RowDefinition>
+            </Grid.RowDefinitions>
 
+<<<<<<< HEAD
         <StackPanel Grid.Row="1">
             <!-- ЛОГТОТИП -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Image x:Name="logo_be" Width="335" Height="70" Source="Project/Design/bicevent1.png"/>
+=======
+            <StackPanel Grid.Row="2">
+                <!-- ЛОГТОТИП -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image x:Name="logo_be" Width="335" Height="70" Source="Project/design/bicevent1.png" OpacityMask="#FF3E60C1"/>
+                </StackPanel>
+>>>>>>> nika_design_24112021
             </StackPanel>
-        </StackPanel>
 
-        <StackPanel Grid.Row="2">
-            <!-- НАДПИСЬ ВХОД -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Grid.Row="3">
+                <!-- НАДПИСЬ ВХОД -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 
-        </StackPanel>       
-        <StackPanel Grid.Row="4">
-            <!-- ВВОД ЛОГИНА -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <iconPacks:PackIconMaterial Kind="Account" 
+            </StackPanel>
+            <StackPanel Grid.Row="5">
+                <!-- ВВОД ЛОГИНА -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <iconPacks:PackIconMaterial Kind="Account" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"
+<<<<<<< HEAD
                                             Foreground="#5A82FC" Height="32" Width="38"/>
                 <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="35" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight">
+=======
+                                            Foreground="#FF3E60C1" Height="32" Width="38"/>
+                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" TextChanged="TextBox_TextChanged_1" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
+                    </TextBox>
 
-                </TextBox>
-              
+                </StackPanel>
+>>>>>>> nika_design_24112021
+
             </StackPanel>
-            
-        </StackPanel>
 
 
-            <StackPanel Grid.Row="6">
-            <!-- Ввод пароля -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
+            <StackPanel Grid.Row="7">
+                <!-- Ввод пароля -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
+<<<<<<< HEAD
                                                 Foreground="#5A82FC" Height="32" Width="38"/>
                 <PasswordBox x:Name="Password_TextBox" PasswordChar="*" MinHeight="8" MaxLength="12" Height="55" Width="400" Style="{DynamicResource PasswordBoxStyle1}" FontFamily="/AppCool;component/#Montserrat" FontSize="30">
                     <TextBlock.TextAlignment>Center</TextBlock.TextAlignment>
                 </PasswordBox>
+=======
+                                                Foreground="#FF3E60C1" Height="32" Width="38"/>
+                    <PasswordBox x:Name="Password_TextBox" PasswordChar="*" MinHeight="8" MaxLength="12" Height="55" Width="400" Style="{DynamicResource PasswordBoxStyle1}" FontFamily="/AppCool;component/#Montserrat" FontSize="24" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                        <TextBlock.TextAlignment>Center</TextBlock.TextAlignment>
+                    </PasswordBox>
+                </StackPanel>
+>>>>>>> nika_design_24112021
             </StackPanel>
-        </StackPanel>
 
 
 
+<<<<<<< HEAD
         <StackPanel Grid.Row="8">       
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}" Click="Login_Button_Click">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Войти" FontFamily="/AppCool;component/#Montserrat" Foreground="White" FontSize="24" Width="90"/>
                         <iconPacks:PackIconMaterial Kind="ArrowRight" 
+=======
+            <StackPanel Grid.Row="9">
+                <!--КНОПКА ВХОДА-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Войти" FontFamily="Montserrat" Foreground="White" FontSize="24" Width="90" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                            <iconPacks:PackIconMaterial Kind="ArrowRight" 
+>>>>>>> nika_design_24112021
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
                                                 Foreground="#fff" Height="32" Width="38"/>
-                    </StackPanel>
-                </Button>
+                        </StackPanel>
+                    </Button>
 
+                </StackPanel>
             </StackPanel>
-            <!-- Кнопка входа -->
-        </StackPanel>
-        
-        
+        </Grid>
     </Grid>
-
 </Window>

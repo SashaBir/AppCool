@@ -129,11 +129,25 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Project\design\bicevent2.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Project\Design\bicevent1.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
   <ItemGroup />
+=======
+  <ItemGroup>
+    <Resource Include="Project\design\Emblema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Project\design\Vector_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Project\design\gerl_vec-01.png" />
+  </ItemGroup>
+>>>>>>> nika_design_24112021
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
