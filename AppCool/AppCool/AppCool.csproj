@@ -128,5 +128,11 @@
   <ItemGroup>
     <Resource Include="Project\design\art.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PASS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="search.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
