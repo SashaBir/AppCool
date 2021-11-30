@@ -260,12 +260,9 @@
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"
                                             Foreground="#FF3E60C1" Height="32" Width="38"/>
-<<<<<<< HEAD
-                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
-                    </TextBox>
-=======
-                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" TextChanged="TextBox_TextChanged_1" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
->>>>>>> origin/nika_design_24112021
+
+                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+
 
                 </StackPanel>
 
