@@ -61,11 +61,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Project\Event\GatheringCreator.cs" />
     <Compile Include="Project\Event\Gathering.cs" />
+    <Compile Include="Project\Event\GatheringCollecter.cs" />
     <Compile Include="Project\Event\GatheringInventory.cs" />
     <Compile Include="Project\Event\Information.cs" />
     <Compile Include="Project\Event\SkillsKeeper.cs" />
     <Compile Include="Project\Event\Status.cs" />
+    <Compile Include="Project\Notifications\Message.cs" />
     <Compile Include="Project\Notifications\Notification.cs" />
     <Compile Include="Project\Skills\Skill.cs" />
     <Compile Include="Project\Extended\ManipulatorExtended.cs" />

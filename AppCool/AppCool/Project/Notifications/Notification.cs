@@ -1,12 +1,10 @@
-﻿using AppCool.Project.Event;
-
-namespace AppCool.Project.Notifications
+﻿namespace AppCool.Project.Notifications
 {
     public class Notification
     {
-        public void GetMessage(Information inforamition)
+        public void GetMessage(Message message)
         {
-
+            System.Console.WriteLine(message);
         }
     }
 }

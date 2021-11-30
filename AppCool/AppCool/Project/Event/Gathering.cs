@@ -1,4 +1,5 @@
-﻿using AppCool.Project.Skills;
+﻿using AppCool.Project.Notifications;
+using AppCool.Project.Skills;
 using AppCool.Project.Users;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,11 @@ namespace AppCool.Project.Event
     {
         public readonly Information Information;
 
-        public event Action<Information> OnStarted = delegate { };
+        public event Action<Message> OnStarted = delegate { };
 
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
         private readonly SkillsKeeper _keeper;
-
-        private Status _status;
 
         public Gathering(Teacher creator, Information information, IReadOnlyCollection<Skill> skills)
         {
@@ -25,26 +24,28 @@ namespace AppCool.Project.Event
             _participants = new UserCollecter();
             _keeper = new SkillsKeeper(skills);
 
-            _status = Status.WaitingForUsers;
+            Status = Status.WaitingForUsers;
         }
+
+        public Status Status { private set; get; }
 
         public void Start()
         {
-            _status = Status.Started;
+            Status = Status.Started;
 
-            OnStarted.Invoke(Information);
+            OnStarted.Invoke(Information.Message);
         }
 
         public void Finished()
         {
-            _status = Status.Finished;
+            Status = Status.Finished;
 
-            _creator.GatheringInventory.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
+            _creator.CreaterdGatherings.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
+
+            OnStarted = delegate { };
 
             foreach (var user in _participants.Users)
             {
-                OnStarted -= user.Notification.GetMessage;
-
                 user.SkillInventory.Add(_keeper.Skills);
                 user.GatheringInventory.Add(Information);
             }
@@ -52,7 +53,7 @@ namespace AppCool.Project.Event
 
         public void Follow(User user)
         {
-            if (_status != Status.WaitingForUsers)
+            if (Status != Status.WaitingForUsers)
                 throw new Exception($"{user.Id} That user has been follow on gathering.");
 
             _participants.Add(user);
