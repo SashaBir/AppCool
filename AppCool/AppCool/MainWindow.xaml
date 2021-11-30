@@ -215,7 +215,8 @@
                 </MultiTrigger>
             </Style.Triggers>
         </Style>
-        
+
+
     </Window.Resources>
 
     <Grid>
@@ -238,17 +239,13 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="115"></RowDefinition>
             </Grid.RowDefinitions>
-            </Grid>
-                <StackPanel Grid.Row="1">
-            <!-- ЛОГТОТИП -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Image x:Name="logo_be" Width="335" Height="70" Source="Project/Design/bicevent1.png"/>
-                    <StackPanel Grid.Row="2">
+
+            <StackPanel Grid.Row="2">
                 <!-- ЛОГТОТИП -->
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image x:Name="logo_be" Width="335" Height="70" Source="Project/design/bicevent1.png" OpacityMask="#FF3E60C1"/>
-                        </StackPanel>
-                    </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image x:Name="logo_be" Width="335" Height="70" Source="Project/design/bicevent1.png" OpacityMask="#FF3E60C1"/>
+                </StackPanel>
+            </StackPanel>
 
             <StackPanel Grid.Row="3">
                 <!-- НАДПИСЬ ВХОД -->
@@ -262,10 +259,8 @@
                     <iconPacks:PackIconMaterial Kind="Account" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"
-                                            Foreground="#5A82FC" Height="32" Width="38"/>
-                            <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="35" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight">
-                                Foreground="#FF3E60C1" Height="32" Width="38"/>
-                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" TextChanged="TextBox_TextChanged_1" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
+                                            Foreground="#FF3E60C1" Height="32" Width="38"/>
+                    <TextBox x:Name="Login_TextBox" TextWrapping="Wrap" FontSize="24" Height="55" Width="400" TextAlignment="Center"  FontFamily="/AppCool;component/#Montserrat" FontWeight="ExtraLight" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center">
                     </TextBox>
 
                 </StackPanel>
@@ -275,29 +270,19 @@
 
             <StackPanel Grid.Row="7">
                 <!-- Ввод пароля -->
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center" 
-                                                Foreground="#5A82FC" Height="32" Width="38"/>
-                            <PasswordBox x:Name="Password_TextBox" PasswordChar="*" MinHeight="8" MaxLength="12" Height="55" Width="400" Style="{DynamicResource PasswordBoxStyle1}" FontFamily="/AppCool;component/#Montserrat" FontSize="30">
-                                <TextBlock.TextAlignment>Center</TextBlock.TextAlignment>
-                            </PasswordBox>
-                            Foreground="#FF3E60C1" Height="32" Width="38"/>
-                            <PasswordBox x:Name="Password_TextBox" PasswordChar="*" MinHeight="8" MaxLength="12" Height="55" Width="400" Style="{DynamicResource PasswordBoxStyle1}" FontFamily="/AppCool;component/#Montserrat" FontSize="24" VerticalAlignment="Center" VerticalContentAlignment="Center">
-                                <TextBlock.TextAlignment>Center</TextBlock.TextAlignment>
-                            </PasswordBox>
-                        </StackPanel>
-                    </StackPanel>
+                                                Foreground="#FF3E60C1" Height="32" Width="38"/>
+                    <PasswordBox x:Name="Password_TextBox" PasswordChar="*" MinHeight="8" MaxLength="12" Height="55" Width="400" Style="{DynamicResource PasswordBoxStyle1}" FontFamily="/AppCool;component/#Montserrat" FontSize="24" VerticalAlignment="Center" VerticalContentAlignment="Center">
+                        <TextBlock.TextAlignment>Center</TextBlock.TextAlignment>
+                    </PasswordBox>
+                </StackPanel>
+            </StackPanel>
 
 
 
-        <StackPanel Grid.Row="8">       
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}" Click="Login_Button_Click">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Войти" FontFamily="/AppCool;component/#Montserrat" Foreground="White" FontSize="24" Width="90"/>
-                        <iconPacks:PackIconMaterial Kind="ArrowRight" 
             <StackPanel Grid.Row="9">
                 <!--КНОПКА ВХОДА-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
