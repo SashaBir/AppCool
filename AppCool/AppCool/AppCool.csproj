@@ -61,6 +61,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CreateEventPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreateEventPage.xaml.cs">
+      <DependentUpon>CreateEventPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -113,10 +120,13 @@
     <Resource Include="Project\design\Emblema.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Project\design\Vector_Login.png" />
+    <Resource Include="Project\design\GIRL.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Project\design\gerl_vec-01.png" />
+    <Resource Include="Project\design\art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Project\design\art.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
