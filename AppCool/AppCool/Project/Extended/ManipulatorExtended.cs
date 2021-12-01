@@ -16,6 +16,7 @@ namespace AppCool.Project.Extended
             var frame = (Frame)oldPage;
             if (frame is Frame)
             {
+                frame.Visibility = System.Windows.Visibility.Visible;
                 frame.Content = newPage;
                 return;
             }
@@ -23,7 +24,8 @@ namespace AppCool.Project.Extended
             var page = (Page)oldPage;
             if (page is Page)
             {
-                page.Content = newPage;
+                page.Visibility = System.Windows.Visibility.Visible;
+                page.Content = newPage;;
                 return;
             }
         }

@@ -36,12 +36,19 @@ namespace AppCool
             gathering.Finished();
             student1.SkillInventory.ShowTestNoUsing();
             student2.SkillInventory.ShowTestNoUsing();
+
+            DisableAllFrame();
+        }
+
+        private void DisableAllFrame()
+        {
+            LoginFrame.Visibility = Visibility.Hidden;
         }
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             AutentificationValidator.IsValidAutorization(Login_TextBox.Text, Password_TextBox.Password);
-            this.SwitchToOtherPage(new TeacherPage());
+            LoginFrame.SwitchToOtherPage(new TeacherPage());
         }
     }
 }

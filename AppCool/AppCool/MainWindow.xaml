@@ -287,7 +287,7 @@
             <StackPanel Grid.Row="9">
                 <!--КНОПКА ВХОДА-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}">
+                    <Button x:Name="Login_Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="55" Style="{DynamicResource ButtonStyle2}" Click="Login_Button_Click">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Войти" FontFamily="Montserrat" Foreground="White" FontSize="24" Width="90" VerticalAlignment="Center" FontWeight="SemiBold"/>
                             <iconPacks:PackIconMaterial Kind="ArrowRight" 
@@ -300,5 +300,6 @@
                 </StackPanel>
             </StackPanel>
         </Grid>
+        <Frame x:Name="LoginFrame" Content="Frame" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920"/>
     </Grid>
 </Window>
