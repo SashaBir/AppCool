@@ -47,7 +47,7 @@ namespace AppCool.Project.Event
 
             _creator.CreaterdGatherings.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
 
-            OnStarted = delegate { };
+            OnStarted = null;
 
             foreach (var user in _participants.Users)
             {
