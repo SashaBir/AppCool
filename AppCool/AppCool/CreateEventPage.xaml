@@ -60,7 +60,8 @@
             <ColumnDefinition Width="430"/>
             <ColumnDefinition Width="85"/>
             <ColumnDefinition Width="418"/>
-            <ColumnDefinition Width="577"/>
+            <ColumnDefinition Width="537"/>
+            <ColumnDefinition Width="40"/>
             <ColumnDefinition Width="430"/>
         </Grid.ColumnDefinitions>
 
@@ -68,17 +69,17 @@
             <RowDefinition Height="33"></RowDefinition>
             <RowDefinition Height="40"></RowDefinition>
             <RowDefinition Height="86"></RowDefinition>
-            <RowDefinition Height="54"></RowDefinition>
+            <RowDefinition Height="65"></RowDefinition>
             <RowDefinition Height="49"></RowDefinition>
             <RowDefinition Height="526"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="1" Grid.Column="1">
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="30">
             <iconPacks:PackIconMaterial Kind="Menu" 
                                                 VerticalAlignment="Center" 
-                                                HorizontalAlignment="Center"
-                                            Foreground="#FF3E60C1" Height="13" Width="19" Margin="33,0" HorizontalContentAlignment="Left"/>
+                                                HorizontalAlignment="Left"
+                                            Foreground="#FF3E60C1" Height="21" Width="25" Margin="5,0,0,0"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="2">
@@ -102,6 +103,17 @@
                          HorizontalAlignment="Left" Background="{x:Null}"/>
                 </StackPanel>
             </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <iconPacks:PackIconMaterial Kind="Bell" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center"
+                                            Foreground="#FF3E60C1" Height="30" Width="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.ColumnSpan="6" Grid.Row="3">
+            <Label Content="Мероприятия колледжа" Height="65" Margin="516,0,781,0" FontFamily="Comfortaa" FontSize="48"/>
         </StackPanel>
     </Grid>
 </Page>
