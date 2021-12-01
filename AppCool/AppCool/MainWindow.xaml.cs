@@ -37,18 +37,13 @@ namespace AppCool
             student1.SkillInventory.ShowTestNoUsing();
             student2.SkillInventory.ShowTestNoUsing();
 
-            DisableAllFrame();
-        }
-
-        private void DisableAllFrame()
-        {
-            LoginFrame.Visibility = Visibility.Hidden;
+            MainFrame.Visibility = Visibility.Hidden; // эту строку не трогаем блять
         }
 
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             AutentificationValidator.IsValidAutorization(Login_TextBox.Text, Password_TextBox.Password);
-            LoginFrame.SwitchToOtherPage(new TeacherPage());
+            MainFrame.SwitchToOtherPage(new TeacherPage());
         }
     }
 }

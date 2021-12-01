@@ -300,6 +300,6 @@
                 </StackPanel>
             </StackPanel>
         </Grid>
-        <Frame x:Name="LoginFrame" Content="Frame" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920"/>
+        <Frame x:Name="MainFrame" Content="Frame" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920"/>
     </Grid>
 </Window>

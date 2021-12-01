@@ -113,7 +113,7 @@
         </StackPanel>
 
         <StackPanel Grid.ColumnSpan="6" Grid.Row="3">
-            <Label Content="Мероприятия колледжа" Height="65" Margin="516,0,781,0" FontFamily="Comfortaa" FontSize="48"/>
+            <Label Content="Создание мероприятия" Height="65" Margin="516,0,781,0" FontFamily="Comfortaa" FontSize="48"/>
         </StackPanel>
     </Grid>
 </Page>
