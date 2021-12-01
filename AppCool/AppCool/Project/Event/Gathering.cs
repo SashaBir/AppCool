@@ -16,6 +16,7 @@ namespace AppCool.Project.Event
         private readonly Teacher _creator;
         private readonly UserCollecter _participants;
         private readonly SkillsKeeper _keeper;
+        private readonly DateTimeViewer _dateTimeViewer;
 
         public Gathering(Teacher creator, Information information, IReadOnlyCollection<Skill> skills)
         {
@@ -33,12 +34,16 @@ namespace AppCool.Project.Event
         {
             Status = Status.Started;
 
+            _dateTimeViewer.Fixate();
+
             OnStarted.Invoke(Information.Message);
         }
 
         public void Finished()
         {
             Status = Status.Finished;
+
+            _dateTimeViewer.Unfixate();
 
             _creator.CreaterdGatherings.Add(Information); // только после заврешения мероприятия добавляем 1 к созданным мероприятиям
 

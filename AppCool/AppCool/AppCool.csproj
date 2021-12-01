@@ -61,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Project\Event\DateTimeViewer.cs" />
     <Compile Include="Project\Event\GatheringCreator.cs" />
     <Compile Include="Project\Event\Gathering.cs" />
     <Compile Include="Project\Event\GatheringCollecter.cs" />
