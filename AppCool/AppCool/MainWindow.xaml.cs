@@ -1,6 +1,7 @@
 using AppCool.Project.Event;
 using AppCool.Project.Skills;
 using AppCool.Project.Users;
+using AppCool.Project.Extended;
 using System.Windows;
 using AppCool.Project.Registration;
 using System.Windows.Controls;
@@ -40,6 +41,7 @@ namespace AppCool
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             AutentificationValidator.IsValidAutorization(Login_TextBox.Text, Password_TextBox.Password);
+            this.SwitchToOtherPage(new TeacherPage());
         }
     }
 }
