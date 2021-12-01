@@ -51,19 +51,19 @@ namespace AppCool.Project.Event
             }
         }
 
-        public void Follow(User user)
+        public void Follow(Student student)
         {
             if (Status != Status.WaitingForUsers)
-                throw new Exception($"{user.Id} That user has been follow on gathering.");
+                throw new Exception($"{student.Id} That user has been follow on gathering.");
 
-            _participants.Add(user);
-            OnStarted += user.Notification.GetMessage;
+            _participants.Add(student);
+            OnStarted += student.Notification.GetMessage;
         }
 
-        public void Unfollow(User user)
+        public void Unfollow(Student student)
         {
-            _participants.Remove(user);
-            OnStarted -= user.Notification.GetMessage;
+            _participants.Remove(student);
+            OnStarted -= student.Notification.GetMessage;
         }
     }
 }
