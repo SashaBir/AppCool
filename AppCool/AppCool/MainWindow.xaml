@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AppCool" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920"
-        ResizeMode="NoResize" 
+        ResizeMode="NoResize"
         Background="#ffff" VerticalContentAlignment="Center"
         >
     <Window.Resources>

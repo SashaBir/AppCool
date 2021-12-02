@@ -142,8 +142,12 @@
   <ItemGroup>
     <Resource Include="Project\Design\bicevent1.png" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Project\Design\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Project\design\Emblema.png" />
   </ItemGroup>
