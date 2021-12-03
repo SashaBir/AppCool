@@ -87,28 +87,28 @@
             <Rectangle Grid.Column="3" Fill="#3E60C1" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="7" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="7" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="7" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
-            <Label Content="Коммуникабельность" Grid.Column="3" HorizontalAlignment="Left" Margin="100,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFFC5A64"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFFC5A64"/>
-            <Label Content="Командная работа" Grid.Column="3" HorizontalAlignment="Left" Margin="100,19,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF3E60C1"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,19,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF3E60C1"/>
-            <Label Content="Приспособленность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF67DCA4"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF67DCA4"/>
-            <Label Content="Инициативность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDC67BB"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDC67BB"/>
-            <Label Content="Творчество" Grid.Column="3" HorizontalAlignment="Left" Margin="100,19,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDCAD67"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,19,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDCAD67"/>
-            <Label Content="Ориентирование" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF8567DC"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF8567DC"/>
+            <Label Content="Коммуникабельность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" Width="440" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFFC5A64"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFFC5A64"/>
+            <Label Content="Командная работа" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" Width="400" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF3E60C1"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF3E60C1"/>
+            <Label Content="Приспособленность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" Width="423" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF67DCA4"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF67DCA4"/>
+            <Label Content="Инициативность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" Width="383" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDC67BB"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDC67BB"/>
+            <Label Content="Творчество" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" Width="244" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDCAD67"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDCAD67"/>
+            <Label Content="Ориентирование" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF8567DC"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF8567DC"/>
             <Rectangle Grid.Column="3" Fill="#17D5FF" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="17" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="17" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="17" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
             <Rectangle Grid.Column="3" Fill="#FFBE17" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="19" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="19" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="19" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
-            <Label Content="Логика" Grid.Column="3" HorizontalAlignment="Left" Margin="100,28,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#17D5FF"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,28,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#17D5FF"/>
-            <Label Content="Лидерство" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFBE17"/>
-            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFBE17"/>
+            <Label Content="Логика" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#17D5FF"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#17D5FF"/>
+            <Label Content="Лидерство" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFBE17"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFBE17"/>
             <Rectangle Grid.Column="3" Fill="#FF1717" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="21" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="21" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="21" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
@@ -121,6 +121,14 @@
             <Rectangle Grid.Column="3" Fill="#7B2DA0" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="27" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="27" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
             <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="27" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Label Content="Артистизм" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="21" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF1717"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="21" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF1717"/>
+            <Label Content="Продуктивность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="23" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#2DA077"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="23" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#2DA077"/>
+            <Label Content="Ораторство" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="25" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#2D8CA0"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="25" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#2D8CA0"/>
+            <Label Content="Мышление" Grid.Column="3" HorizontalAlignment="Left" Margin="105,17,0,0" Grid.Row="27" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#7B2DA0"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,17,0,0" Grid.Row="27" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#7B2DA0"/>
 
         </Grid>
     </ScrollViewer>
