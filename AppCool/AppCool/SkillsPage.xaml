@@ -3,12 +3,125 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AppCool"
+      xmlns:local="clr-namespace:AppCool" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="SkillsPage">
+      Title="SkillPage" d:DesignHeight="1080" d:DesignWidth="1920"
+      Background="#fff" VerticalAlignment="Center"
+      >
+    <ScrollViewer VerticalAlignment="Top">
 
-    <Grid>
-        
-    </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="430"/>
+                <ColumnDefinition Width="22"/>
+                <ColumnDefinition Width="63"/>
+                <ColumnDefinition Width="892"/>
+                <ColumnDefinition Width="46"/>
+                <ColumnDefinition Width="17"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="430"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="33"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="86"></RowDefinition>
+                <RowDefinition Height="65"></RowDefinition>
+                <RowDefinition Height="68"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="34"></RowDefinition>
+                <RowDefinition Height="91"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Height="20" Width="30" Margin="0,10">
+                <iconPacks:PackIconMaterial Kind="Menu" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Left"
+                                            Foreground="#FF3E60C1" Height="21" Width="25" Margin="5,0,0,0"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Height="30" Width="30">
+                <iconPacks:PackIconMaterial Kind="Bell" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center"
+                                            Foreground="#FF3E60C1" Height="30" Width="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="6" Grid.Row="3">
+                <Label Content="Мои навыки" Height="65" Margin="516,0,670,0" FontFamily="Comfortaa" FontSize="48"/>
+            </StackPanel>
+            <Rectangle Grid.Column="3" Fill="#FC5A64" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="5" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="5" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#8567DC" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="15" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="15" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="15" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#DCAD67" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="13" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="13" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="13" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#DC67BB" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="11" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="11" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="11" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#67DCA4" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="9" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="9" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="9" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#3E60C1" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="7" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="7" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="7" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Label Content="Коммуникабельность" Grid.Column="3" HorizontalAlignment="Left" Margin="100,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFFC5A64"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,17,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFFC5A64"/>
+            <Label Content="Командная работа" Grid.Column="3" HorizontalAlignment="Left" Margin="100,19,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF3E60C1"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,19,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF3E60C1"/>
+            <Label Content="Приспособленность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF67DCA4"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="9" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF67DCA4"/>
+            <Label Content="Инициативность" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDC67BB"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="11" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDC67BB"/>
+            <Label Content="Творчество" Grid.Column="3" HorizontalAlignment="Left" Margin="100,19,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFDCAD67"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,19,0,0" Grid.Row="13" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFDCAD67"/>
+            <Label Content="Ориентирование" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FF8567DC"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="15" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FF8567DC"/>
+            <Rectangle Grid.Column="3" Fill="#17D5FF" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="17" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="17" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="17" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#FFBE17" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="19" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="19" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="19" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Label Content="Логика" Grid.Column="3" HorizontalAlignment="Left" Margin="100,28,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#17D5FF"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="652,28,0,0" Grid.Row="17" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#17D5FF"/>
+            <Label Content="Лидерство" Grid.Column="3" HorizontalAlignment="Left" Margin="105,19,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" Width="366" FontFamily="Comfortaa" Height="53" Background="{x:Null}" Foreground="#FFBE17"/>
+            <Label Content="Баллы:1000" Grid.Column="3" HorizontalAlignment="Left" Margin="657,19,0,0" Grid.Row="19" VerticalAlignment="Top" FontSize="36" FontFamily="Comfortaa" Foreground="#FFBE17"/>
+            <Rectangle Grid.Column="3" Fill="#FF1717" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="21" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="21" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="21" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#2DA077" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="23" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="23" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="23" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#2D8CA0" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="25" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="25" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="25" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+            <Rectangle Grid.Column="3" Fill="#7B2DA0" HorizontalAlignment="Left" Height="91" Margin="807,0,0,0" Grid.Row="27" VerticalAlignment="Top" Width="131" RadiusY="45" RadiusX="45" Grid.ColumnSpan="2"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" Height="91" Grid.Row="27" Margin="0,0,5,0" VerticalAlignment="Top" RadiusY="45" RadiusX="45"/>
+            <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="91" Grid.Row="27" VerticalAlignment="Top" Width="51" Margin="841,0,0,0"/>
+
+        </Grid>
+    </ScrollViewer>
 </Page>

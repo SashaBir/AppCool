@@ -81,6 +81,9 @@
     <Compile Include="Project\Users\Teacher.cs" />
     <Compile Include="Project\Users\User.cs" />
     <Compile Include="Project\Users\UserCollecter.cs" />
+    <Compile Include="SkillsPage.xaml.cs">
+      <DependentUpon>SkillsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TeacherPage.xaml.cs">
       <DependentUpon>TeacherPage.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SkillsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TeacherPage.xaml" />
   </ItemGroup>
   <ItemGroup>
