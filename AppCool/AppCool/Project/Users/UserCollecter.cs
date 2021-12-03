@@ -6,29 +6,29 @@ namespace AppCool.Project.Users
 {
     public class UserCollecter
     {
-        private readonly SortedDictionary<uint, User> _users;
+        private readonly SortedDictionary<uint, Student> _users;
 
         public UserCollecter()
         {
-            _users = new SortedDictionary<uint, User>();
+            _users = new SortedDictionary<uint, Student>();
         }
 
-        public IEnumerable<User> Users => _users.GetIEnumerable();
+        public IEnumerable<Student> Users => _users.GetIEnumerable();
 
-        public void Add(User user)
+        public void Add(Student student)
         {
-            if (_users.ContainsKey(user.Id) == true)
-                throw new Exception($"{user.Id} That user has been added");
+            if (_users.ContainsKey(student.Id) == true)
+                throw new Exception($"{student.Id} That user has been added");
 
-            _users.Add(user.Id, user);
+            _users.Add(student.Id, student);
         }
 
-        public void Remove(User user)
+        public void Remove(Student student)
         {
-            if (_users.ContainsKey(user.Id) == false)
-                throw new Exception($"{user.Id} That user has been not added");
+            if (_users.ContainsKey(student.Id) == false)
+                throw new Exception($"{student.Id} That user has been not added");
 
-            _users.Remove(user.Id);
+            _users.Remove(student.Id);
         }
     }
 }

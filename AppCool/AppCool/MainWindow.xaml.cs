@@ -1,10 +1,9 @@
 using AppCool.Project.Event;
+using AppCool.Project.Extended;
+using AppCool.Project.Registration;
 using AppCool.Project.Skills;
 using AppCool.Project.Users;
-using AppCool.Project.Extended;
 using System.Windows;
-using AppCool.Project.Registration;
-using System.Windows.Controls;
 
 namespace AppCool
 {
