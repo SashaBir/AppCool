@@ -150,8 +150,12 @@
   <ItemGroup>
     <Resource Include="Project\Design\bicevent1.png" />
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="discussion 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="united 1.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Project\design\Emblema.png" />
   </ItemGroup>
@@ -163,6 +167,54 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Project\design\art.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="adaptation 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="lightbulb 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stress-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="compass 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="businessman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="productivity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="creative-process 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="thinking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stress-management 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diagram 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leader 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="businessman 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="productivity 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="thinking 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
