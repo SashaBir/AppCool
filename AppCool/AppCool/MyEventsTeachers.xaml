@@ -1,13 +1,14 @@
-﻿<Page x:Class="AppCool.TeacherPage"
+﻿<Page x:Class="AppCool.MyEventsTeachers"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AppCool" xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
       mc:Ignorable="d" 
-      Height="1080" d:DesignWidth="1920"
-      Background="#fff" VerticalAlignment="Center"
-      Title="CreateEventPage">
+      d:DesignHeight="1000" d:DesignWidth="1900"
+      Background="White"
+      Title="MyEventsTeachers">
+
     <Page.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#3E60C1"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
@@ -69,28 +70,30 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="22*"></RowDefinition>
-            <RowDefinition Height="48*"></RowDefinition>
-            <RowDefinition Height="26*"></RowDefinition>
-            <RowDefinition Height="69*"></RowDefinition>
-            <RowDefinition Height="915*"></RowDefinition>
+            <RowDefinition Height="47*"></RowDefinition>
+            <RowDefinition Height="23*"></RowDefinition>
+            <RowDefinition Height="60*"></RowDefinition>
+            <RowDefinition Height="848*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1080" Width="52" Background="#3E60C1" Grid.RowSpan="5" Grid.ColumnSpan="2" Margin="0,1,0,-1"/>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Height="1000" Width="52" Background="#3E60C1" Grid.RowSpan="5" Grid.ColumnSpan="2" Margin="0,6,0,-6"/>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="20" Width="30" Margin="0,15,0,13">
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Height="20" Width="30" Margin="0,13,0,14">
             <iconPacks:PackIconMaterial Kind="Menu" 
                                                 VerticalAlignment="Center" 
-                                                HorizontalAlignment="Left"
+                                                HorizontalAlignment="Right"
                                             Foreground="#FF3E60C1" Height="21" Width="25" Margin="5,0,0,0"/>
         </StackPanel>
-        <StackPanel Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Height="58" Grid.RowSpan="2" Width="241" Margin="0,11,0,1"/>
 
-        <StackPanel Grid.Row="1" Grid.Column="2" Margin="0,0,50,0" Grid.ColumnSpan="2">
+
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,3,0,4" Height="40" Width="241">
+            <Image HorizontalAlignment="Left" Source="Project/Design/logo.jpg" Height="40" Margin="0" VerticalAlignment="Center" Width="241"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2">
             <StackPanel/>
-            <Image HorizontalAlignment="Left" Source="Project/Design/logo.jpg"  Margin="0" VerticalAlignment="Center" Height="48" Width="241"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Margin="10,9,11,9" Width="30">
+        <StackPanel Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,9,10,8" Height="30" Width="30">
             <iconPacks:PackIconMaterial Kind="Bell" 
                                                 VerticalAlignment="Center" 
                                                 HorizontalAlignment="Center"
@@ -98,7 +101,7 @@
         </StackPanel>
 
         <StackPanel Grid.ColumnSpan="5" Grid.Row="3">
-            <Label Content="Мероприятия колледжа" Height="65" Margin="150,0,781,0" FontFamily="Comfortaa" FontSize="48"/>
+            <Label Content="Мои мероприятия" Height="65" Margin="150,0,781,0" FontFamily="Comfortaa" FontSize="48"/>
         </StackPanel>
     </Grid>
 </Page>
