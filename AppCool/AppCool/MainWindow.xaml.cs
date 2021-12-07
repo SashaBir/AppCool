@@ -43,7 +43,7 @@ namespace AppCool
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
             AutentificationValidator.IsValidAutorization(Login_TextBox.Text, Password_TextBox.Password);
-            MainFrame.SwitchToOtherPage(new CreateEventPage());
+            MainFrame.SwitchToOtherPage(new Rating());
         }
     }
 }
